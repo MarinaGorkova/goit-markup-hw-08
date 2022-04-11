@@ -1,0 +1,30 @@
+.about-team__social-list {
+    display: flex;
+    justify-content: center;
+}
+.about-team__social-item {
+    & + & {
+    margin-left: 10px;
+    }
+}
+.about-team__social-link {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    &:hover,&:focus {
+        background-color: #2196F3;
+    }
+    &:hover .about-team__social-icon,
+    &:focus .about-team__social-icon{
+        fill: #FFFFFF;
+    }
+}
+.about-team__social-icon {
+    fill: #AFB1B8;
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}

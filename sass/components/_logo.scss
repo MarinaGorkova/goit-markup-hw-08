@@ -1,0 +1,36 @@
+.header__logo {
+    margin-right: 93px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+}
+.header__logo-web {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color); 
+    
+}
+.footer__logo {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--btn-color);
+    text-decoration: none;
+    display: inline-block;    
+    margin-bottom: 20px;
+    
+}
+.footer__logo-web {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+    
+}
