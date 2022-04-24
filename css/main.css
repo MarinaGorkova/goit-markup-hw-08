@@ -80,6 +80,14 @@ body {
   margin: -1px;
 }
 
+.container {
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -428,6 +436,20 @@ body {
   background-color: #2196F3;
   left: 0;
   bottom: -32px;
+}
+
+.site-list {
+  display: none;
+}
+
+.connect__list {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero {
