@@ -1,17 +1,18 @@
-.site-list {
+.site-nav {
     display: none;
 }
-.connect__list {
+.connect {
     display: none;
+}
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: gray;
 }
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-}
-.header {
-    background-color: gray;
 }
 // .site-list__item {
 //     margin-right: 50px;

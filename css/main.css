@@ -81,12 +81,28 @@ body {
 }
 
 .container {
-  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   outline: 2px solid tomato;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -439,22 +455,24 @@ body {
   bottom: -32px;
 }
 
-.site-list {
+.site-nav {
   display: none;
 }
 
-.connect__list {
+.connect {
   display: none;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: gray;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header {
-  background-color: gray;
 }
 
 .hero {
