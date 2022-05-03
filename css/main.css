@@ -44,7 +44,7 @@ img {
   display: block;
 }
 
-.modal-close, .check-text, .list-btn, .footer__social-link {
+.modal-close, .check-text, .list-btn, .about-clients, .about-clients__img, .about-clients__link, .footer__social-link {
   display: flex;
   align-items: center;
 }
@@ -704,53 +704,10 @@ body {
   color: #757575;
 }
 
-.images {
-  padding-top: 0px;
-  padding-bottom: 94px;
-  background-color: white;
-}
-
-.after-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-title-color);
-}
-
-.images-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
-}
-
-.images-list__img {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
-  position: relative;
-  list-style-type: none;
-}
-
-.images-list__text {
-  position: absolute;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  width: 370px;
-  height: 70px;
-  padding: 27px 82px 27px 82px;
-  display: flex;
-  transform: translateY(-100%);
+@media screen and (max-width: 767px) {
+  .images {
+    display: none;
+  }
 }
 
 .about-team__name {
@@ -763,6 +720,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   background: #FFFFFF;
   margin-top: 30px;
+  width: 100%;
 }
 
 .about-team__social-list {
@@ -868,21 +826,19 @@ body {
 }
 
 .clients {
-  margin-top: 94px;
+  margin-top: 60px;
 }
 
 .about-clients {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 }
 
-.about-clients__img + .about-clients__img {
-  margin-left: 30px;
+.about-clients__img {
+  flex-basis: calc(100% / 2 - 30px);
 }
 
 .about-clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   background-color: #ffffff;
   display: flex;
