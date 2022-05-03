@@ -481,12 +481,11 @@ body {
     padding: 0;
     line-height: 0;
   }
-  .mobile-menu-btn:hover, .mobile-menu-btn:focus {
-    color: var(--btn-color);
-    background: #2196F3;
-  }
   .mobile-menu-btn__icon {
     fill: #212121;
+  }
+  .mobile-menu-btn__icon:hover, .mobile-menu-btn__icon:focus {
+    color: var(--accent-color);
   }
   .mobile-menu {
     position: absolute;
