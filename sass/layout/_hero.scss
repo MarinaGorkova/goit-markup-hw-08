@@ -1,43 +1,86 @@
-.hero {
-    background-color:#2F303A;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    padding-top: 200px;
-    
-}
-.hero__container {
-    text-align: center;
-    
-}
+    .hero {
+        background-color:#2F303A;
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg-mob.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        padding-top: 118px;
+    }
+    .hero__container {
+            text-align: center;            
+        }
+    .hero__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--first-title-color);
+        max-width: 360px;
+        margin: auto;   
+                }
 
-.hero-portfolio {
-    padding-top: 94px;
-    padding-bottom: 50px;
-    background-color: white;
-}
-.hero__title {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--first-title-color);
-    max-width: 696px;
-    margin: auto;   
-}
+
+
+
+
+
+
+
+
+// .hero {
+//     background-color:#2F303A;
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/hero-bg.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     max-width: 1600px;
+//     height: 600px;
+//     margin: 0 auto;
+//     padding: 0;
+//     text-align: center;
+//     padding-top: 200px;
+    
+// }
+// .hero__container {
+//     text-align: center;
+    
+// }
+
+// .hero-portfolio {
+//     padding-top: 94px;
+//     padding-bottom: 50px;
+//     background-color: white;
+// }
+// .hero__title {
+//     margin-top: 0;
+//     margin-bottom: 0;
+//     font-family: "Roboto", sans-serif;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: var(--first-title-color);
+//     max-width: 696px;
+//     margin: auto;   
+// }
 
