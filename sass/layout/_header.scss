@@ -1,7 +1,7 @@
 .header {
     padding-top: 16px;
     padding-bottom: 16px;
-    background-color: gray;
+    background-color: #ffffff;
     position: relative;
 }
 .header__container {
@@ -22,9 +22,13 @@
         border: none;
         padding: 0;
         line-height: 0;
+        &:hover,&:focus {
+            color: var(--btn-color);
+            background: #2196F3;
+        }
     }
     .mobile-menu-btn__icon {
-        fill: #ffffff;
+        fill: #212121;
     }
     .mobile-menu {
         position: absolute;
