@@ -44,9 +44,10 @@ img {
   display: block;
 }
 
-.modal-close, .check-text, .list-btn, .about-clients, .about-clients__img, .about-clients__link, .footer__social-link {
+.modal-close, .check-text, .list-btn, .about-clients__link, .footer__social-link {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -81,15 +82,16 @@ body {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
   outline: 2px solid tomato;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
 }
 
@@ -603,12 +605,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 400px;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 0;
   text-align: center;
-  padding-top: 118px;
+  padding: 0;
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
 }
 
 .hero__container {
@@ -756,6 +757,17 @@ body {
   margin-bottom: 16px;
 }
 
+.after-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 .portfolio {
   background-color: white;
   padding-bottom: 94px;
@@ -825,25 +837,39 @@ body {
   padding: 2px 24px 20px 24px;
 }
 
-.clients {
-  margin-top: 60px;
-}
-
 .about-clients {
-  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .about-clients__img {
+  align-items: center;
+  justify-content: center;
   flex-basis: calc(100% / 2 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .about-clients__img {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-clients__img {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .about-clients__link {
   width: 210px;
   height: 92px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -863,6 +889,11 @@ body {
 .about-clients__icon {
   fill: #AFB1B8;
   transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.after-title {
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .footer {
