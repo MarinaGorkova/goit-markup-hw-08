@@ -44,7 +44,7 @@ img {
   display: block;
 }
 
-.modal-close, .check-text, .list-btn, .about-clients__link, .footer__social-link {
+.modal-close, .check-text, .about-clients__link, .footer__social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,9 +232,9 @@ body {
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: 124px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-left: 125px;
+  margin-bottom: 40px;
+  margin-top: 31px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -349,7 +349,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -361,6 +361,7 @@ body {
   margin-right: 8px;
   display: inline-block;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  margin-top: 15px;
 }
 
 .hero-list-btn:hover, .hero-list-btn:focus {
@@ -369,10 +370,10 @@ body {
 }
 
 .list-btn {
-  border-radius: 4px;
-  padding: 6px 22px;
-  text-align: center;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .footer-button {
@@ -770,15 +771,13 @@ body {
 
 .portfolio {
   background-color: white;
-  padding-bottom: 94px;
-  margin-right: 100px;
-  margin-left: 100px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+  padding-bottom: 60px;
 }
 
 .portfolio-list-item-wrap {
@@ -806,7 +805,7 @@ body {
 
 .portfolio-list-item {
   flex-basis: calc(100% / 3 - 30px);
-  width: 370px;
+  width: 450px;
   height: 404px;
   margin: 15px;
   border: 1px solid #ECECEC;
@@ -842,13 +841,12 @@ body {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 60px;
 }
 
 .about-clients__img {
+  flex-basis: calc(100% / 2 - 30px);
   align-items: center;
   justify-content: center;
-  flex-basis: calc(100% / 2 - 30px);
 }
 
 @media screen and (min-width: 768px) {
@@ -861,6 +859,11 @@ body {
   .about-clients__img {
     flex-basis: calc(100% / 6 - 30px);
   }
+}
+
+.card-item {
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .about-clients__link {
@@ -890,16 +893,15 @@ body {
   transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.after-title {
-  margin-top: 60px;
-  margin-bottom: 30px;
+.clients {
+  box-sizing: border-box;
+  margin-top: 94px;
 }
 
 .footer {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  position: absolute;
   text-align: center;
 }
 
