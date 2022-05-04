@@ -107,22 +107,9 @@ body {
   }
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 100vw;
-  height: 100vh;
-  transition: opacity 500ms, visibility 500ms;
-}
-
-.backdrop.is-hidden .modal {
-  transform: scale(0.5);
-}
-
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
@@ -131,7 +118,7 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
   transition-property: background-color;
-  padding: 35px;
+  padding: 40px;
 }
 
 .modal:hover {
@@ -151,6 +138,19 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   padding: 0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 500ms, visibility 500ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(0.5);
 }
 
 .modal-close-icon {
@@ -173,7 +173,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
