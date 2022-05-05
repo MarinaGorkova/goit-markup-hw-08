@@ -88,14 +88,20 @@
         margin-bottom: 0;
         font-family: "Roboto", sans-serif;
         font-weight: 900;
-        font-size: 26px;
-        line-height: 42px;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--first-title-color);
         max-width: 360px;
-        margin: auto;   
+        margin: auto;  
+    @media screen and (min-width: 480px) {
+        line-height: 42px; 
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+        line-height: 60px;
+        font-size: 44px;
+    }
                 }
     .hero-portfolio {
             padding-top: 60px;

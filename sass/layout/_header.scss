@@ -222,6 +222,32 @@
         fill: var(--text-color);
         transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     }
+@media screen and (min-width: 1200px) {
+        .connect {
+            display: flex;
+        }
+    }
+    .connect__list.mail {
+        padding-bottom: 0;
+    }
+    .connect__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        &:hover,&:focus {
+            color: #2196F3;
+        }
+        &:hover .connect__img,
+        &:focus .connect__img {
+            fill: #2196F3;
+        }
+    }
 }
 
 // .header__container {
