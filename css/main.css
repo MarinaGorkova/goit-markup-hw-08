@@ -108,6 +108,7 @@ body {
 }
 
 .modal {
+  z-index: auto;
   width: 450px;
   min-height: 609px;
   background-color: #ffffff;
@@ -476,7 +477,6 @@ body {
   padding-bottom: 16px;
   background-color: #ffffff;
   position: relative;
-  z-index: 1;
 }
 
 .header__container {

@@ -1,4 +1,5 @@
 .modal {
+    z-index: auto;
     width: 450px;
     min-height: 609px;
     background-color: #ffffff;
@@ -28,6 +29,7 @@
         box-sizing: border-box;
         padding: 0;
     }
+    
 }
 .backdrop {
     position: fixed;
