@@ -7,18 +7,20 @@
 //     margin-right: 100px;
 //     margin-left: 100px;
 // }
-.img {
+    .img {
     display: block;
     max-width: 100%;
     height: auto;
   }
-
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-    padding-bottom: 60px;
+  .project-img {
+    width: 100%;
 }
+// .portfolio-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: -15px;
+//     padding-bottom: 60px;
+// }
 .portfolio-list-item-wrap {
     position: relative;
     overflow: hidden;
