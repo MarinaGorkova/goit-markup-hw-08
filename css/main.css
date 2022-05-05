@@ -816,6 +816,10 @@ body {
   width: 100%;
 }
 
+.portfolio-list {
+  margin-bottom: 60px;
+}
+
 .portfolio-list-item-wrap {
   position: relative;
   overflow: hidden;
@@ -844,6 +848,7 @@ body {
   max-width: 450px;
   height: 404px;
   margin: 15px;
+  margin-bottom: 30px;
   border: 1px solid #ECECEC;
   cursor: pointer;
   transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -895,10 +900,8 @@ body {
 }
 
 .card-set {
-  display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: -15px;
 }
 
 .card-item {

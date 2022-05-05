@@ -7,12 +7,12 @@
 //     margin-right: 100px;
 //     margin-left: 100px;
 // }
-    .img {
+.img {
     display: block;
     max-width: 100%;
     height: auto;
   }
-  .project-img {
+.project-img {
     width: 100%;
 }
 // .portfolio-list {
@@ -21,6 +21,9 @@
 //     margin: -15px;
 //     padding-bottom: 60px;
 // }
+.portfolio-list {
+    margin-bottom: 60px;
+}
 .portfolio-list-item-wrap {
     position: relative;
     overflow: hidden;
@@ -46,6 +49,7 @@
     max-width: 450px;
     height: 404px;
     margin: 15px;
+    margin-bottom: 30px;
     border: 1px solid #ECECEC;
     cursor: pointer;
     transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
