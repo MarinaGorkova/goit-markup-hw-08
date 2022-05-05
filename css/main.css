@@ -107,7 +107,6 @@ body {
 }
 
 .modal {
-  z-index: auto;
   width: 450px;
   min-height: 609px;
   background-color: #ffffff;
@@ -341,7 +340,6 @@ body {
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 200px;
 }
 
 .hero-list-btn {
@@ -629,16 +627,50 @@ body {
 }
 
 .hero {
-  background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
+  width: 100%;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 118px;
+  padding-top: 118px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-align: center;
-  padding: 0;
-  padding-top: 200px;
-  display: flex;
-  align-items: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob2@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg@2x.jpg);
+  }
 }
 
 .hero__container {
@@ -858,6 +890,11 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.card-set {
+  flex-wrap: wrap;
+  margin-left: -15px;
+}
+
 .portfolio-title {
   font-weight: bold;
   font-size: 18px;
@@ -898,9 +935,11 @@ body {
   }
 }
 
-.card-set {
+.card-client-set {
+  display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .card-item {
