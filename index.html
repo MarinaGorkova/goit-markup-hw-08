@@ -84,10 +84,10 @@
                 <li class="list mobile-menu-mail__item"><a class="mobile-menu-mail__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             </ul>
             <ul class="mobile-menu-social">
-                <li class="list mobile-menu-social__item"><a class="mobile-menu-social__link">Instagram</a></li>
-                <li class="list mobile-menu-social__item"><a class="mobile-menu-social__link">Twitter</a></li>
-                <li class="list mobile-menu-social__item"><a class="mobile-menu-social__link">Facebook</a></li>
-                <li class="list mobile-menu-social__item"><a class="mobile-menu-social__link">Linkedin</a></li>
+                <li class="list mobile-menu-social__item"><a href="https://www.Instagram.com/" target="_blank" rel="noreferrer noopener" class="mobile-menu-social__link">Instagram</a></li>
+                <li class="list mobile-menu-social__item"><a href="https://www.Twitter.com/" target="_blank" rel="noreferrer noopener" class="mobile-menu-social__link">Twitter</a></li>
+                <li class="list mobile-menu-social__item"><a href="https://www.Facebook.com/" target="_blank" rel="noreferrer noopener" class="mobile-menu-social__link">Facebook</a></li>
+                <li class="list mobile-menu-social__item"><a href="https://www.Linkedin.com/" target="_blank" rel="noreferrer noopener" class="mobile-menu-social__link">Linkedin</a></li>
             </ul>
             </div>
         </div>
@@ -255,34 +255,62 @@
             <h2 class="after-title">Наша команда</h2>
             <ul class="about-team" style="list-style:none;">
                 <li class="about-team__img">
-                    <img src="./images/team-img-1-mob.jpg" alt="Игорь Демьяненко">
+                    <picture>
+                        <source
+                            srcset="./images/team-img-1.webp 1x, ./images/team-img-1@2x.webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/webp"/>
+                        <source
+                            srcset="./images/team-img-1.jpg 1x, ./images/team-img-1@2x.jpg 2x"
+                            media="(min-width:1200px)" />
+                        <source
+                            srcset="./images/team-img-1-tab.webp 1x, ./images/team-img-1-tab@2x.webp 2x"
+                            media="(min-width:768px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-1-tab.jpg 1x, ./images/team-img-1-tab@2x.jpg 2x" 
+                            media="(min-width:768px)" />
+                        <source
+                            srcset="./images/team-img-1-mob.webp 1x, ./images/team-img-1-mob@2x.webp 2x"
+                            media="(max-width:767px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-1-mob.jpg 1x, ./images/team-img-1-mob@2x.jpg 2x" 
+                            media="(max-width:767px)" />
+                        <img 
+                            src="./images/team-img-1.jpg" 
+                            lang="en" alt="Product Designer"
+                            class="team-img" 
+                            />
+                    </picture>
+                    <!-- <img src="./images/team-img-1-mob.jpg" alt="Игорь Демьяненко"> -->
                     <div class="about-team__content">
                     <h3 class="about-team__name">Игорь Демьяненко</h3>
                     <p class="about-team__profession" lang="en">Product Designer</p>
                     <ul class="about-team__social-list list">
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Instagram.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Twitter.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Linkedin.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
@@ -292,34 +320,61 @@
                     </div>
                 </li>
                 <li class="about-team__img">
-                    <img src="./images/team-img-2-mob.jpg" alt="Ольга Репина">
+                    <picture>
+                        <source
+                            srcset="./images/team-img-2.webp 1x, ./images/team-img-2@2x.webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-2.jpg 1x, ./images/team-img-2@2x.jpg 2x" 
+                            media="(min-width:1200px)" />
+                        <source
+                            srcset="./images/team-img-2-tab.webp 1x, ./images/team-img-2-tab@2x.webp 2x"
+                            media="(min-width:768px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-2-tab.jpg 1x, ./images/team-img-2-tab@2x.jpg 2x" 
+                            media="(min-width:768px)" />
+                        <source
+                            srcset="./images/team-img-2-mob.webp 1x, ./images/team-img-2-mob@2x.webp 2x"
+                            media="(max-width:767px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-2-mob.jpg 1x, ./images/team-img-2-mob@2x.jpg 2x" 
+                            media="(max-width:767px)" />
+                        <img 
+                        src="./images/team-img-2.jpg" 
+                        lang="en" alt="Frontend Developer" 
+                        class="team-img"/>
+                    </picture>
+                    <!-- <img src="./images/team-img-2-mob.jpg" alt="Ольга Репина"> -->
                     <div class="about-team__content">
                     <h3 class="about-team__name">Ольга Репина</h3>
                     <p class="about-team__profession" lang="en">Frontend Developer</p>
                     <ul class="about-team__social-list list">
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Instagram.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Twitter.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Linkedin.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
@@ -329,34 +384,60 @@
                 </div>
                 </li>
                 <li class="about-team__img">
-                    <img src="./images/team-img-3-mob.jpg" alt="Николай Тарасов">
+                    <picture>
+                        <source
+                            srcset="./images/team-img-3.webp 1x, ./images/team-img-3@2x.webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-3.jpg 1x, ./images/team-img-3@2x.jpg 2x" 
+                            media="(min-width:1200px)" />
+                        <source
+                            srcset="./images/team-img-3-tab.webp 1x, ./images/team-img-3-tab@2x.webp 2x"
+                            media="(min-width:768px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-3-tab.jpg 1x, ./images/team-img-3-tab@2x.jpg 2x" 
+                            media="(min-width:768px)" />
+                        <source
+                            srcset="./images/team-img-3-mob.webp 1x, ./images/team-img-3-mob@2x.webp 2x"
+                            media="(max-width:767px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-3-mob.jpg 1x, ./images/team-img-3-mob@2x.jpg 2x" 
+                            media="(max-width:767px)" />
+                        <img src="./images/team-img-3.jpg" 
+                        lang="en" alt="Marketing Specialist" 
+                        class="team-img">
+                    </picture>
+                    <!-- <img src="./images/team-img-3-mob.jpg" alt="Николай Тарасов"> -->
                     <div class="about-team__content">
                     <h3 class="about-team__name">Николай Тарасов</h3>
                     <p class="about-team__profession" lang="en">Marketing</p>
                     <ul class="about-team__social-list list">
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Instagram.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Twitter.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Linkedin.com/" target="_blank" rel="noreferrer noopeners" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
@@ -366,34 +447,59 @@
                 </div>
                 </li>
                 <li class="about-team__img">
-                    <img src="./images/team-img-4-mob.jpg" alt="Михаил Ермаков">
+                    <picture>
+                        <source
+                            srcset="./images/team-img-4.webp 1x, ./images/team-img-4@2x.webp 2x"
+                            media="(min-width:1200px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-4.jpg 1x, ./images/team-img-4.jpg 2x" 
+                            media="(min-width:1200px)" />
+                        <source
+                            srcset="./images/team-img-4-tab.webp 1x, ./images/team-img-4-tab@2x.webp 2x"
+                            media="(min-width:768px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-4-tab.jpg 1x, ./images/team-img-4-tab@2x.jpg 2x" 
+                            media="(min-width:768px)" />
+                        <source
+                            srcset="./images/team-img-4-mob.webp 1x, ./images/team-img-4-mob@2x.webp 2x"
+                            media="(max-width:767px)"
+                            type="image/webp"/>
+                        <source 
+                            srcset="./images/team-img-4-mob.jpg 1x, ./images/team-img-4-mob@2x.jpg 2x" 
+                            media="(max-width:767px)" />
+                        <img src="./images/team-img-4.jpg" 
+                        lang="en" alt="Marketing Specialist" class="team-img">
+                    </picture>
+                    <!-- <img src="./images/team-img-4-mob.jpg" alt="Михаил Ермаков"> -->
                     <div class="about-team__content">
                     <h3 class="about-team__name">Михаил Ермаков</h3>
                     <p class="about-team__profession" lang="en">UI Designer</p>
                     <ul class="about-team__social-list list">
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Instagram.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Twitter.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="about-team__social-item">
-                            <a href="" class="about-team__social-link">
+                            <a href="https://www.Linkedin.com/" target="_blank" rel="noreferrer noopener" class="about-team__social-link">
                                 <svg class="about-team__social-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
@@ -408,7 +514,7 @@
     <section class="clients">
         <div class="container">
             <h2 class="after-title">Постоянные клиенты</h2>
-            <ul class="about-clients" style="list-style:none;">
+            <ul class="about-clients card-set" style="list-style:none;">
                 <li class="about-clients__img card-item">
                     <a href="" class="about-clients__link">
                     <svg class="about-clients__icon" width="106" height="60">
@@ -417,40 +523,40 @@
                     </svg>
                     </a>
                 </li>
-                <li class="about-clients__img">
-                    <a href="" class="about-clients__link card-item">
+                <li class="about-clients__img card-item">
+                    <a href="" class="about-clients__link">
                     <svg class="about-clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-Logo2">
                         </use>
                     </svg>
                     </a>
                 </li>
-                <li class="about-clients__img">
-                    <a href="" class="about-clients__link card-item">
+                <li class="about-clients__img card-item">
+                    <a href="" class="about-clients__link">
                     <svg class="about-clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-Logo3">
                         </use>
                     </svg>
                     </a>
                 </li>
-                <li class="about-clients__img">
-                    <a href="" class="about-clients__link card-item">
+                <li class="about-clients__img card-item">
+                    <a href="" class="about-clients__link">
                     <svg class="about-clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-Logo4">
                         </use>
                     </svg>
                     </a>
                 </li>
-                <li class="about-clients__img">
-                    <a href="" class="about-clients__link card-item">
+                <li class="about-clients__img card-item">
+                    <a href="" class="about-clients__link">
                     <svg class="about-clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-Logo5">
                         </use>
                     </svg>
                     </a>
                 </li>
-                <li class="about-clients__img">
-                    <a href="" class="about-clients__link card-item">
+                <li class="about-clients__img card-item">
+                    <a href="" class="about-clients__link">
                     <svg class="about-clients__icon" width="106" height="60">
                         <use href="./images/icons.svg#icon-Logo6">
                         </use>
@@ -488,28 +594,28 @@
             </h3>
             <ul class="footer-name-2-list" style="list-style:none;">
                 <li class="footer__social-item">
-                    <a href="" class="footer__social-link">
+                    <a href="https://www.Instagram.com/" target="_blank" rel="noreferrer noopener" class="footer__social-link">
                         <svg class="footer__social-icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer__social-item">
-                    <a href="" class="footer__social-link">
+                    <a href="https://www.Twitter.com/" target="_blank" rel="noreferrer noopener" class="footer__social-link">
                         <svg class="footer__social-icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer__social-item">
-                    <a href="" class="footer__social-link">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="footer__social-link">
                         <svg class="footer__social-icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="footer__social-item">
-                    <a href="" class="footer__social-link">
+                    <a href="https://www.Linkedin.com/" target="_blank" rel="noreferrer noopener" class="footer__social-link">
                         <svg class="footer__social-icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>

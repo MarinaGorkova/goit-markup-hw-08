@@ -16,11 +16,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #F5F4FA;
+    &-img {
+        width: 100%;
+      }
 }
 .about-team__name {
         font-family: "Roboto", sans-serif;
         font-style: normal;
-        font-weight: 450px;
+        font-weight: 500px;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
@@ -30,7 +33,7 @@
     .about-team__profession {
         font-family: "Roboto", sans-serif;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
