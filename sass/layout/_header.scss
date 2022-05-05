@@ -72,6 +72,11 @@
         padding-left: 40px;
     }
 }
+    .mobile-menu-social {
+        display: flex;
+        flex-wrap: wrap;    
+        margin-right: -10px;
+    }
     .mobile-menu-nav__link {
         font-weight: 500;
         font-size: 40px;
@@ -89,7 +94,7 @@
         padding-bottom: 32px;
     }
     .mobile-menu-nav__item:last-child {
-        padding-bottom: 360px;
+        padding-bottom: 302px;
     }
 
     .mobile-menu-tel__item {
