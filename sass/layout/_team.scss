@@ -8,6 +8,22 @@
     background: #FFFFFF;
     margin-top: 30px;
     width: 100%;
+    @media screen and (min-width: 768px) {
+        text-align: left;
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+    margin-top: 30px;
+      }
+}
+.about-team {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    margin-top: -30px;
+        // align-items: center;
+        // justify-content: center;
+}
 }
 .about-team__social-list {
     padding-bottom: 24px;
@@ -23,13 +39,16 @@
 .about-team__name {
         font-family: "Roboto", sans-serif;
         font-style: normal;
-        font-weight: 500px;
+        
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--second-title-color);
+        @media screen and (min-width: 768px) {
+        font-weight: 500px;
     }
+}
     .about-team__profession {
         font-family: "Roboto", sans-serif;
         font-style: normal;
