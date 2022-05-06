@@ -33,7 +33,7 @@
     border-radius: 4px;
     padding: 6px 22px;
     margin-right: 8px;
-    // margin-top: 15px;
+    margin-top: 15px;
     display: inline-block;
     transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     &:hover,&:focus {
@@ -53,10 +53,9 @@
     // justify-content: center;
     
     display: flex;
-    flex-wrap: wrap;    
-    @media screen and (min-width: 480px) {
-        margin-top: -15px;
-    }
+    flex-wrap: wrap;  
+    margin-top: -15px;  
+    
     @media screen and (min-width: 768px) {
         justify-content: center;
         margin-bottom: 30px;
@@ -64,6 +63,8 @@
     @media screen and (min-width: 1200px) {
         justify-content: center;
         // margin-bottom: 50px;
+        display: flex;
+    
     }
    
 }

@@ -178,9 +178,9 @@
             color: #2196F3;
         }
         &:hover .connect__img1,
-        &:focus .connect__img1 
+        &:focus .connect__img1, 
         &:hover .connect__img2,
-        &:focus .connect__img2{
+        &:focus .connect__img2 {
             fill: #2196F3;
         }
     }
@@ -283,8 +283,10 @@
         &:hover,&:focus {
             color: #2196F3;
         }
-        &:hover .connect__img,
-        &:focus .connect__img {
+        &:hover .connect__img1,
+        &:focus .connect__img1,
+        &:hover .connect__img2,
+        &:focus .connect__img2 {
             fill: #2196F3;
         }
     }

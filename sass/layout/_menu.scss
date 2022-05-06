@@ -82,10 +82,9 @@
     }
     @media screen and (min-width: 1200px) {
         flex-basis: calc(100% / 3 - 30px);
-        width: 100%;
+        
         max-width: 370px;
-        height: 404px;
-        margin: 15px;
+        
         }
 }
     .card-set {
