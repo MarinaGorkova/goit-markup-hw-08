@@ -146,6 +146,7 @@
         text-decoration: none;
         
     }
+
 @media screen and (min-width: 768px) {
     .mobile-menu-btn {
         display: none;
@@ -155,6 +156,33 @@
     }
     .mobile-menu-social {
         display: flex;
+    }
+    .header {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        background-color: #ffffff;
+        position: relative;
+        
+    }
+    .connect__name {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        &:hover,&:focus {
+            color: #2196F3;
+        }
+        &:hover .connect__img1,
+        &:focus .connect__img1 
+        &:hover .connect__img2,
+        &:focus .connect__img2{
+            fill: #2196F3;
+        }
     }
     .site-list__item {
         margin-right: 50px;}
@@ -190,24 +218,7 @@
     .connect {
         display: unset;
     }
-    .connect__name {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.4;
-        letter-spacing: 0.02em;
-        color: var(--text-color);
-        // display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-        &:hover,&:focus {
-            color: #2196F3;
-        }
-        &:hover .connect__img,
-        &:focus .connect__img {
-            fill: #2196F3;
-        }
-    }
+    
     .connect__list.mail {
         padding-bottom: 10px;
     }
@@ -217,17 +228,44 @@
         display: flex;    
     }
 
-    .connect__img {
+    .connect__img1 {
         align-items: center;
-        margin-right: 10px;
+        margin-right: 8px;
         fill: var(--text-color);
         transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        width: 14px; 
+        height: 10px;
     }
+    .connect__img2 {
+        align-items: center;
+        margin-right: 8px;
+        fill: var(--text-color);
+        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        width: 10px; 
+        height: 14px;
+    }
+}
 
 @media screen and (min-width: 1200px) {
         .connect {
             display: flex;
         }
+    
+    .connect__img1 {
+        align-items: center;
+        margin-right: 10px;
+        fill: var(--text-color);
+        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        width: 16px; 
+        height: 12px;
+    }
+    .connect__img2 {
+        align-items: center;
+        margin-right: 10px;
+        fill: var(--text-color);
+        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        width: 10px; 
+        height: 16px;
     }
     .connect__list.mail {
         padding-bottom: 0;
@@ -259,6 +297,14 @@
         background-color: #ffffff;
         position: relative;
         
+    }
+    .connect__img {
+        align-items: center;
+        margin-right: 10px;
+        fill: var(--text-color);
+        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        width: 10px; 
+        height: 14px;
     }
     
 }

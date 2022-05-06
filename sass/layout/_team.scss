@@ -38,7 +38,7 @@
         &-img {
             width: 100%;
         }
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 768px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -80,6 +80,7 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
+        margin-bottom: 30px;
     }
     // .about-team__content {
     //     margin-top: 30px;

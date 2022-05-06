@@ -1,9 +1,9 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     .images {
         display: none;
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
 .images {
     padding-top: 0px;
     padding-bottom: 94px;
