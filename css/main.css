@@ -120,8 +120,6 @@ body {
 }
 
 .modal {
-  width: 450px;
-  min-height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
@@ -150,6 +148,20 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop {
@@ -185,11 +197,22 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-title {
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 23px;
+  }
 }
 
 .input-text {
@@ -244,9 +267,6 @@ body {
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: 85px;
-  margin-bottom: 40px;
-  margin-top: 31px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -255,6 +275,22 @@ body {
   color: #FFFFFF;
   justify-content: center;
   border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .checkbox-button {
+    margin-left: 85px;
+    margin-bottom: 40px;
+    margin-top: 31px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-button {
+    margin-left: 124px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
 
 .input-wrap {
@@ -274,9 +310,7 @@ body {
 }
 
 .check-text {
-  font-size: 12px;
   color: #757575;
-  line-height: 14px;
   margin-top: 20px;
 }
 
@@ -287,6 +321,20 @@ body {
   border: 2px solid #000000;
   border-radius: 2px;
   margin-right: 7px;
+}
+
+@media screen and (max-width: 767px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .policy-check:checked + .check-text::before {
@@ -370,7 +418,6 @@ body {
   border-radius: 4px;
   padding: 6px 22px;
   margin-right: 8px;
-  margin-top: 15px;
   display: inline-block;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
@@ -398,6 +445,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .list-btn {
+    justify-content: center;
+  }
+}
+
 .footer-button {
   margin-left: auto;
   margin-right: auto;
@@ -419,6 +472,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-button {
     margin-top: 48px;
+    margin-left: 12px;
   }
 }
 
@@ -430,10 +484,22 @@ body {
   font-family: 'Raleway';
   margin-right: 93px;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--header-color);
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
 }
 
 .header__logo-web {
@@ -846,14 +912,19 @@ body {
   }
 }
 
-.hero-portfolio {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-
 @media screen and (min-width: 768px) {
   .hero-portfolio {
     padding-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-portfolio {
+    padding-bottom: 0;
+    padding-top: 94px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1091,6 +1162,12 @@ body {
   background-color: white;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-bottom: 94px;
+  }
+}
+
 .img {
   display: block;
   max-width: 100%;
@@ -1101,8 +1178,10 @@ body {
   width: 100%;
 }
 
-.portfolio-list {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    margin-bottom: 60px;
+  }
 }
 
 .portfolio-list-item-wrap {
@@ -1159,12 +1238,29 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item {
+    flex-basis: calc(100% / 3 - 30px);
+    width: 100%;
+    max-width: 370px;
+    height: 404px;
+    margin: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card-set {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -1336,10 +1432,6 @@ body {
 .footer-name-2-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
-}
-
-.list2 {
   margin-bottom: 60px;
 }
 
