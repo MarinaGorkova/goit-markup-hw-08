@@ -1,7 +1,13 @@
 .clients {
     box-sizing: border-box;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        }
+    @media screen and (min-width: 1200px) {
+        margin-top: 94px;
+        margin-bottom: 94px;
+        }
 }
 .about-clients {
     @extend %align-list;       
@@ -53,9 +59,7 @@
     fill: #AFB1B8;
     transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.after-title {
-    margin-bottom: 30px;
-}
+
 
 
 

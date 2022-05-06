@@ -22,3 +22,13 @@ button {
 img {
     display: block;
 }
+@media screen and (max-width: 767px) {
+    .after-title {
+        margin-bottom: 30px;
+    }
+    }
+@media screen and (min-width: 1200px) {
+        .after-title {
+            margin-bottom: 50px;
+        }
+        }

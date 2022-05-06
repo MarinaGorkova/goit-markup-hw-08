@@ -22,8 +22,6 @@
         display: flex;
         align-items: center;
         text-align: center;
-        padding-bottom: 118px;
-        padding-top: 118px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -58,6 +56,8 @@
                 ),
                 url(../images/hero-bg-tab@2x.jpg);
             }
+            padding-bottom: 118px;
+            padding-top: 118px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -78,6 +78,8 @@
                 ),
                 url(../images/hero-bg@2x.jpg);
             }
+            padding-bottom: 120px;
+            padding-top: 120px;
         }
 }
     .hero__container {
@@ -91,16 +93,20 @@
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: var(--first-title-color);
-        max-width: 360px;
+        color: var(--first-title-color);        
         margin: auto;  
     @media screen and (min-width: 480px) {
         line-height: 42px; 
         font-size: 26px;
     }
+    @media screen and (min-width: 480px) {
+        max-width: 360px;
+    }
     @media screen and (min-width: 1200px) {
         line-height: 60px;
         font-size: 44px;
+        max-width: 696px;
+        line-height: 1.36;
     }
                 }
     .hero-portfolio {

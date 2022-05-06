@@ -44,6 +44,18 @@ img {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .after-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .after-title {
+    margin-bottom: 50px;
+  }
+}
+
 .modal-close, .check-text, .about-list, .about-clients, .about-clients__link, .footer__social-link {
   display: flex;
   align-items: center;
@@ -404,6 +416,12 @@ body {
   padding: 10px 10px 10px 28px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-button {
+    margin-top: 48px;
+  }
+}
+
 .footer-button-icon {
   margin: 13px 28px 13px 10px;
 }
@@ -481,13 +499,6 @@ body {
   }
 }
 
-.header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: #ffffff;
-  position: relative;
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -500,6 +511,12 @@ body {
   }
   .connect {
     display: none;
+  }
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #ffffff;
+    position: relative;
   }
   .mobile-menu-btn {
     background-color: transparent;
@@ -731,6 +748,15 @@ body {
   .connect__name:focus .connect__img {
     fill: #2196F3;
   }
+  .connect__name:last-child {
+    margin-left: 50px;
+  }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    background-color: #ffffff;
+    position: relative;
+  }
 }
 
 .hero {
@@ -739,8 +765,6 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  padding-bottom: 118px;
-  padding-top: 118px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -756,6 +780,8 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
+    padding-bottom: 118px;
+    padding-top: 118px;
   }
 }
 
@@ -771,6 +797,8 @@ body {
     padding-bottom: 200px;
     padding-top: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    padding-bottom: 120px;
+    padding-top: 120px;
   }
 }
 
@@ -793,7 +821,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--first-title-color);
-  max-width: 360px;
   margin: auto;
 }
 
@@ -804,10 +831,18 @@ body {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__title {
     line-height: 60px;
     font-size: 44px;
+    max-width: 696px;
+    line-height: 1.36;
   }
 }
 
@@ -902,6 +937,54 @@ body {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .images {
+    padding-top: 0px;
+    padding-bottom: 94px;
+    background-color: white;
+  }
+  .after-title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+    margin-bottom: 50px;
+  }
+  .images-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  .images-list__img {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    list-style-type: none;
+  }
+  .images-list__text {
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    width: 370px;
+    height: 70px;
+    padding: 27px 82px 27px 82px;
+    display: flex;
+    transform: translateY(-100%);
+  }
+}
+
 .about-team__name {
   padding-top: 30px;
   padding-bottom: 10px;
@@ -924,6 +1007,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .about-team__img {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about-team {
     display: flex;
@@ -938,13 +1027,25 @@ body {
 }
 
 .team {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #F5F4FA;
 }
 
 .team-img {
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .about-team__name {
@@ -1087,8 +1188,20 @@ body {
 
 .clients {
   box-sizing: border-box;
-  margin-top: 60px;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .clients {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 
 .about-clients__img {
@@ -1146,23 +1259,36 @@ body {
   transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.after-title {
-  margin-bottom: 30px;
-}
-
 .footer {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 .footer__logo {
   font-family: 'Raleway';
   font-style: normal;
-  font-size: 24px;
-  line-height: 28px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
 }
 
 .footer__link-adress {
@@ -1261,11 +1387,38 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-wrap {
+.footer-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-all {
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+  }
+  .footer-two {
+    margin-left: 70px;
+  }
+  .footer-name-3 {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 12px;
+  }
+  .footer-three {
+    margin-left: 93px;
+  }
+  .footer-input {
+    width: 358px;
+  }
+  .list2 li:not(:last-child) {
+    margin-bottom: 9px;
   }
 }
 /*# sourceMappingURL=main.css.map */
