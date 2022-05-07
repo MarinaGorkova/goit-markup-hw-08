@@ -481,7 +481,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-button {
-    margin-top: 48px;
     margin-left: 12px;
   }
 }
@@ -496,13 +495,8 @@ body {
   font-weight: bold;
   letter-spacing: 0.03em;
   color: var(--header-color);
-}
-
-@media screen and (max-width: 767px) {
-  .header__logo {
-    font-size: 24px;
-    line-height: 28px;
-  }
+  font-size: 24px;
+  line-height: 28px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -516,13 +510,8 @@ body {
   font-weight: bold;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
-
-@media screen and (max-width: 767px) {
-  .header__logo-web {
-    font-size: 24px;
-    line-height: 28px;
-  }
+  font-size: 24px;
+  line-height: 28px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1465,6 +1454,22 @@ body {
   }
 }
 
+.footer-two {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-two {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-two {
+    padding-top: 0;
+  }
+}
+
 .footer__link-adress {
   font-family: 'Roboto';
   font-style: normal;
@@ -1559,9 +1564,14 @@ body {
 }
 
 .footer-wrap {
-  display: flex;
   justify-content: space-around;
   align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1581,6 +1591,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     padding-top: 12px;
+    text-align: left;
   }
   .footer-three {
     margin-left: 93px;
@@ -1590,6 +1601,9 @@ body {
   }
   .list2 li:not(:last-child) {
     margin-bottom: 9px;
+  }
+  .footer-form-three {
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
