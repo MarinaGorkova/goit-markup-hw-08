@@ -1470,6 +1470,18 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-three {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-three {
+    padding-top: 0;
+  }
+}
+
 .footer__link-adress {
   font-family: 'Roboto';
   font-style: normal;
